@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air Quality Prediction</title>
+</head>
+<body>
+    <h1>Air Quality Prediction</h1>
+    <form action="/predict_html" method="post">
+        <label for="CO(GT)">CO (GT):</label>
+        <input type="number" step="0.01" name="CO(GT)" required><br>
+
+        <label for="PT08.S1(CO)">PT08.S1 (CO):</label>
+        <input type="number" step="0.01" name="PT08.S1(CO)" required><br>
+
+        <label for="C6H6(GT)">C6H6 (GT):</label>
+        <input type="number" step="0.01" name="C6H6(GT)" required><br>
+
+        <label for="NOx(GT)">NOx (GT):</label>
+        <input type="number" step="0.01" name="NOx(GT)" required><br>
+
+        <label for="T">Temperature (°C):</label>
+        <input type="number" step="0.01" name="T" required><br>
+
+        <label for="RH">Relative Humidity (%):</label>
+        <input type="number" step="0.01" name="RH" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Prediction: {{ prediction }}</h2>
+        <p>Category: {{ category }}</p>
+        <p>Recommendation: {{ recommendation }}</p>
+    {% endif %}
+</body>
+</html>
