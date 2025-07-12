@@ -28,15 +28,7 @@ This project predicts air quality based on sensor data using a **Random Forest m
 #### 2. Feature Importance  
 ![Feature Importance](figure/Figure 4: Random Forest Feature Importance.png)  
 *NOx and CO levels were top predictors.* 
-## 📡 API Documentation  
-**Endpoint**: `POST /predict`  
-**Input (JSON)**:  
-```json
-{  
-  "CO(GT)": 2.3,  
-  "NOx(GT)": 200,  
-  "Temperature": 25.5  
-}
+
 ## 🌐 Web Interface  
 ### Input Form  
 ![Input Form](figure/Figure_8.png)  
