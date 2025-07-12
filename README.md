@@ -11,7 +11,39 @@ This project predicts air quality based on sensor data using a **Random Forest m
 - Python (Flask, Pandas, Sklearn)  
 - Machine Learning (Random Forest)  
 - HTML, CSS, JavaScript  
-- Git & GitHub  
+- Git & GitHub
+  ## 📊 Results  
+## Model Performance  
+| Metric               | Value  |  
+|----------------------|--------|  
+| Training R²          | 0.98   |  
+| Testing R²           | 0.91   |  
+| Cross-Validation R²  | 0.86   |  
+
+### Key Visualizations  
+#### 1. Actual vs Predicted NO2  
+![Actual vs Predicted](figure/Figure 1: Actual vs Predicted NO2 Levels (R²=0.91).png)  
+*High accuracy (R²=0.91) in NO2 prediction.*  
+
+#### 2. Feature Importance  
+![Feature Importance](figure/Figure 4: Random Forest Feature Importance.png)  
+*NOx and CO levels were top predictors.* 
+## 📡 API Documentation  
+**Endpoint**: `POST /predict`  
+**Input (JSON)**:  
+```json
+{  
+  "CO(GT)": 2.3,  
+  "NOx(GT)": 200,  
+  "Temperature": 25.5  
+}
+## 🌐 Web Interface  
+### Input Form  
+![Input Form](figure/Figure 8: Web App Input Form.png)  
+
+### Prediction Output  
+![Prediction Result](figure/Prediction: 113.3.png)  
+*Sample output with health recommendations.*  
 
 ##  How to Run  
 1. Clone the repository:  
