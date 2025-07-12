@@ -22,7 +22,7 @@ This project predicts air quality based on sensor data using a **Random Forest m
 
 ### Key Visualizations  
 #### 1. Actual vs Predicted NO2  
-![Actual vs Predicted](figure/figure/Figure1:ActualvsPredictedNO2Levels(R²=0.91).png)  
+![Actual vs Predicted](figure/Figure1:ActualvsPredictedNO2Levels(R²=0.91).png)  
 *High accuracy (R²=0.91) in NO2 prediction.*  
 
 #### 2. Feature Importance  
