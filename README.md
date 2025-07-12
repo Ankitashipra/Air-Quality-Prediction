@@ -37,13 +37,6 @@ This project predicts air quality based on sensor data using a **Random Forest m
   "NOx(GT)": 200,  
   "Temperature": 25.5  
 }
-## 🌐 Web Interface  
-### Input Form  
-![Input Form](figure/Figure 8: Web App Input Form.png)  
-
-### Prediction Output  
-![Prediction Result](figure/Prediction: 113.3.png)  
-*Sample output with health recommendations.*  
 
 ##  How to Run  
 1. Clone the repository:  
